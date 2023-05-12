@@ -14,3 +14,10 @@ BMI = st.sidebar.number_input("BMI",value=67, step=0)
 DiabetesPedigreeFunction = st.sidebar.number_input("DiabetesPedigreeFunction",value=2, step=0)
 Age = st.sidebar.number_input("Age",value=67.1, step=0)
 
+import streamlit as st
+from PIL import Image
+
+image = Image.open('sunrise.jpg')
+
+st.image(image, caption='Sunrise by the mountains')
+
