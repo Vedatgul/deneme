@@ -4,14 +4,14 @@
 import pandas as pd
 import streamlit as st
 st.title('hello')
-st.sidebar.header("New customer information:")
-country = st.sidebar.selectbox("Country of new user: ", {"BRA", "TUR", "USA", "CAN", "DEU","FRA"})
-phone_type = st.sidebar.selectbox("Operating System of new user: ", {"Android", "IOS"})
+st.sidebar.header("New user information:")
 gender = st.sidebar.selectbox("Gender of new user: ", {"Female", "Male"})
-age = st.sidebar.number_input("Age of new user",value=18, step=1)
-
-input_dataframe = [[country, phone_type, gender, age]]
-input_dataframe = pd.DataFrame(input_dataframe, columns = ["COUNTRY", "SOURCE", "SEX", "AGE"])
-
-st.sidebar.markdown(("New Customer Definition:"))
+Pregnancies = st.sidebar.number_input("Pregnanciesof",value=17, step=1)
+Glucose = st.sidebar.number_input("Glucose",value=199, step=0)
+BloodPressure = st.sidebar.number_input("BloodPressure",value=122, step=0)
+SkinThickness = st.sidebar.number_input("SkinThickness",value=99, step=0)
+Insulin = st.sidebar.number_input("Insulin",value=846, step=0)
+BMI = st.sidebar.number_input("BMI",value=67.1, step=0)
+DiabetesPedigreeFunction = st.sidebar.number_input("DiabetesPedigreeFunction",value=2.42, step=0.08)
+Age = st.sidebar.number_input("Age",value=67.1, step=0)
 
