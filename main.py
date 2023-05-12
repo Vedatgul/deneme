@@ -9,3 +9,6 @@ phone_type = st.sidebar.selectbox("Operating System of new user: ", {"Android", 
 gender = st.sidebar.selectbox("Gender of new user: ", {"Female", "Male"})
 age = st.sidebar.number_input("Age of new user",value=18, step=1)
 
+input_dataframe = [[country, phone_type, gender, age]]
+input_dataframe = pd.DataFrame(input_dataframe, columns = ["COUNTRY", "SOURCE", "SEX", "AGE"])
+
