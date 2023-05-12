@@ -14,7 +14,6 @@ DiabetesPedigreeFunction = st.slider('DiabetesPedigreeFunction', 0, 122, 45)
 SkinThickness = st.number_input("SkinThickness",value=99, step=0)
 Insulin = st.number_input("Insulin",value=846, step=0)
 BMI = st.number_input("BMI",value=67, step=0)
-st.set_page_config(layout="wide")
 
 
 
