@@ -14,17 +14,11 @@ BMI = st.sidebar.number_input("BMI",value=67, step=0)
 DiabetesPedigreeFunction = st.sidebar.number_input("DiabetesPedigreeFunction",value=2, step=0)
 Age = st.sidebar.number_input("Age",value=67.1, step=0)
 
-st.sidebar.markdown("Side")
-st.markdown(
-    """
-    <style> 
-    reportview-cpntainer {
-       background : url("x.jpege")
-       }
-       sidebar.sidebar-content {
-       background: url("x.jpeg")
-       }
-         </style> 
-         unsafe_allow_html = True
-   )
+
+from PIL import Image
+
+image = Image.open('x.jpg')
+
+st.image(image, caption='Sunrise by the mountains')
+
 
