@@ -4,7 +4,7 @@
 import streamlit as st
 st.title('hello')
 st.sidebar.header("New user information:")
-st.radio('Gender of new user:', options=['Female', 'Male'], horizontal=True)
+st.radio('Gender of new user:', options=['Female', 'Male'])
 
 Pregnancies = st.sidebar.number_input("Pregnanciesof",value=17, step=1)
 Glucose = st.sidebar.number_input("Glucose",value=199, step=0)
