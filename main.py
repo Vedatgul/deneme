@@ -1,7 +1,6 @@
 # Kural Tabanlı Sınıflandırma ile Potansiyel Müşteri Getirisi Hesaplama
 
 # Mission 1
-import pandas as pd
 import streamlit as st
 st.title('hello')
 st.sidebar.header("New user information:")
