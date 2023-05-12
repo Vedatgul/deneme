@@ -2,7 +2,9 @@
 
 # Mission 1
 import streamlit as st
-st.title('Diabetes Prediction')
+left, right = st.columns(2)   
+with left:     
+  st.title('Diabetes Prediction')
 
 st.sidebar.header("New user information:")
 st.sidebar.radio('Gender of new user:', options=['Female', 'Male'],  horizontal=True)
@@ -11,7 +13,8 @@ age = st.slider('How old are you?', 0, 90, 25)
 Glucose = st.slider('Glucose', 0, 199, 50)
 BloodPressure = st.slider('BloodPressure', 0, 122, 45)
 DiabetesPedigreeFunction = st.slider('DiabetesPedigreeFunction', 0, 122, 45)
-SkinThickness = st.sidebar.number_input("SkinThickness",value=99, step=0)
+with right:     
+  SkinThickness = st.sidebar.number_input("SkinThickness",value=99, step=0)
 Insulin = st.sidebar.number_input("Insulin",value=846, step=0)
 BMI = st.sidebar.number_input("BMI",value=67, step=0)
 st.set_page_config(layout="wide")
