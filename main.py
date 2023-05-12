@@ -16,5 +16,10 @@ SkinThickness = st.sidebar.number_input("SkinThickness",value=99, step=0)
 Insulin = st.sidebar.number_input("Insulin",value=846, step=0)
 BMI = st.sidebar.number_input("BMI",value=67, step=0)
 
+from PIL import Image
+# Loading Image using PIL
+im = Image.open('/content/x.png')
+# Adding Image to web app
+st.set_page_config(page_title="Surge Price Prediction App", page_icon = im)
 
 
