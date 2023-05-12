@@ -27,7 +27,9 @@ st.markdown(
        background: url("x.jpeg")
        }
          </style> 
+         """,
          unsafe_allow_html = True
    )
+
 
 
