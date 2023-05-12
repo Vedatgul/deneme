@@ -20,11 +20,11 @@ st.sidebar.markdown("Side")
 st.markdown(
     """
     <style> 
-    reportview-cpntainer {
-       background : url("x.jpeg")
+    .reportview-container {
+        background : url("x.jpeg")
        }
-       sidebar.sidebar-content {
-       background: url("x.jpeg")
+       .sidebar.sidebar-content {
+          background: url("x.jpeg")
        }
          </style> 
          """,
