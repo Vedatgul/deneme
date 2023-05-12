@@ -19,10 +19,10 @@ Age = st.sidebar.number_input("Age",value=67.1, step=0)
 import streamlit as st
 import base64
 
-main_bg = "sample.jpg"
+main_bg = "x.jpg"
 main_bg_ext = "jpg"
 
-side_bg = "sample.jpg"
+side_bg = "x.jpg"
 side_bg_ext = "jpg"
 
 st.markdown(
