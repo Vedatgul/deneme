@@ -3,5 +3,5 @@
 # Mission 1
 import streamlit as st
 st.title('hello')
-
+st.sidebar.header("New customer information:")
 
