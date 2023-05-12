@@ -4,7 +4,7 @@
 import streamlit as st
 st.title('hello')
 
-
+st.sidebar.header("New user information:")
 
 
 
