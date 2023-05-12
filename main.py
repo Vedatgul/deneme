@@ -15,7 +15,6 @@ DiabetesPedigreeFunction = st.sidebar.number_input("DiabetesPedigreeFunction",va
 Age = st.sidebar.number_input("Age",value=67.1, step=0)
 
 
-
 import streamlit as st
 import base64
 
