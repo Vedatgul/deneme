@@ -2,7 +2,8 @@
 
 # Mission 1
 import streamlit as st  
- 
+st.set_page_config(page_title="Diabetes Prediction App")
+
 st.title('Diabetes Prediction')
 st.sidebar.header("New user information:")
 st.sidebar.radio('Gender of new user:', options=['Female', 'Male'],  horizontal=True)
