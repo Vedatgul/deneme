@@ -1,3 +1,6 @@
+pip install streamlit-lottie
+pip install streamlit
+pip install requests
 import streamlit as st
 import pickle
 import numpy as np
