@@ -129,44 +129,6 @@ def generate_df_new(df):
 
     return df_new
 
-#
-# def regression_(x_train, x_test, y_train, y_test):
-#     lr = LinearRegression()
-#     rf = RandomForestRegressor()
-#     lg = LGBMRegressor()
-#     # ct = CatBoostRegressor()
-#     r = Ridge()
-#     l = Lasso()
-#     e = ElasticNet()
-#     kn = KNeighborsRegressor()
-#     et = ExtraTreeRegressor()
-#     gb = GradientBoostingRegressor()
-#     dt = DecisionTreeRegressor()
-#     xgb = XGBRegressor()
-#
-#     algos = [lr, rf, lg, r, l, e, kn, et, gb, dt, xgb]
-#     algos_names = ['LinearRegressor', "rf", "lgbm", 'Ridge', 'Lasso', 'ElasticNet', 'KNeighbors', 'ExtraTree',
-#                    'GradientBoosting',
-#                    'DecisionTree', 'XGB']
-#
-#     r_score = []
-#     mse = []
-#     mae = []
-#
-#     result = pd.DataFrame(columns=['R_square', 'MSE', 'MAE'], index=algos_names)
-#
-#     for algo in algos:
-#         pred = algo.fit(x_train, y_train).predict(x_test)
-#         r_score.append(r2_score(y_test, pred))
-#         mse.append(mean_squared_error(y_test, pred) ** .5)
-#         mae.append(mean_absolute_error(y_test, pred))
-#
-#     result.R_square = r_score
-#     result.MSE = mse
-#     result.MAE = mae
-#
-#     return result.sort_values('R_square', ascending=False)
-
 
 def show_predict_page():
     df = pd.read_csv("ds_salaries.csv")
@@ -178,31 +140,6 @@ def show_predict_page():
 
     st.write("""### We need some information to predict the salary""")
 
-    # job_titles = (
-    #     "Principal Data Scientist", "ML Engineer", "Data Scientist", "Applied Scientist", "Data Analyst",
-    #     "Data Modeler", "Research Engineer", "Analytics Engineer", "Business Intelligence Engineer",
-    #     "Machine Learning Engineer", "Data Strategist", "Data Engineer", "Computer Vision Engineer",
-    #     "Data Quality Analyst", "Compliance Data Analyst", "Data Architect", "Applied Machine Learning Engineer",
-    #     "AI Developer", "Research Scientist", "Data Analytics Manager", "Business Data Analyst", "Applied Data Scientist",
-    #     "Staff Data Analyst", "ETL Engineer", "Data DevOps Engineer", "Head of Data", "Data Science Manager", "Data Manager",
-    #     "Machine Learning Researcher", "Big Data Engineer", "Data Specialist", "Lead Data Analyst", "BI Data Engineer",
-    #     "Director of Data Science", "Machine Learning Scientist", "MLOps Engineer", "AI Scientist",
-    #     "Autonomous Vehicle Technician", "Applied Machine Learning Scientist", "Lead Data Scientist",
-    #     "Cloud Database Engineer", "Financial Data Analyst", "Data Infrastructure Engineer", "Software Data Engineer",
-    #     "AI Programmer", "Data Operations Engineer", "BI Developer", "Data Science Lead", "Deep Learning Researcher",
-    #     "BI Analyst", "Data Science Consultant", "Data Analytics Specialist", "Machine Learning Infrastructure Engineer",
-    #     "BI Data Analyst", "Head of Data Science", "Insight Analyst", "Deep Learning Engineer",
-    #     "Machine Learning Software Engineer", "Big Data Architect", "Product Data Analyst",
-    #     "Computer Vision Software Engineer", "Azure Data Engineer", "Marketing Data Engineer", "Data Analytics Lead",
-    #     "Data Lead", "Data Science Engineer", "Machine Learning Research Engineer", "NLP Engineer",
-    #     "Manager Data Management", "Machine Learning Developer", "3D Computer Vision Researcher",
-    #     "Principal Machine Learning Engineer", "Data Analytics Engineer", "Data Analytics Consultant",
-    #     "Data Management Specialist", "Data Science Tech Lead", "Data Scientist Lead", "Cloud Data Engineer",
-    #     "Data Operations Analyst", "Marketing Data Analyst", "Power BI Developer", "Product Data Scientist",
-    #     "Principal Data Architect", "Machine Learning Manager", "Lead Machine Learning Engineer", "ETL Developer",
-    #     "Cloud Data Architect", "Lead Data Engineer", "Head of Machine Learning", "Principal Data Analyst",
-    #     "Principal Data Scientist", "Principal Data Engineer", "Staff Data Scientist", "Finance Data Analyst",
-    # )
 
     job_titles = (
         "Data Engineer", "Data Scientist", "Data Analyst", "Machine Learning Engineer",
